@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_input"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@color/ashgray"
+    android:orientation="vertical"
+    tools:context=".DialogActivity">
+
+    <TextView
+        android:id="@+id/givenWordText"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="145dp"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/answerInputField"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="166dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="Answer"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#878282"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="126dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="78dp"
+        android:autoText="false"
+        android:backgroundTint="#5BC3EB"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="121dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="78dp"
+        android:backgroundTint="#CF1414"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
